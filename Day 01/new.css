@@ -1,0 +1,20 @@
+*{
+    /* background-color: yellow; */
+    /* color: blue; */
+}
+
+p{
+    background-color: orange;
+}
+
+#one{
+    background-color: red;
+}
+
+#two{
+    background-color: orange;
+}
+
+.common{
+    background-color: blue;
+}

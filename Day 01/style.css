@@ -1,0 +1,15 @@
+h2 {
+  color: yellow;
+  /* background-color: red; */
+  background-color: rgb(32, 220, 82);
+}
+
+p {
+  color: blue;
+  /* background-color: orange; */
+  background-color: #C0C0C0;
+}
+
+span {
+  background-color: aquamarine;
+}
