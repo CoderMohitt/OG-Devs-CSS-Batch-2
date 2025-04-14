@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            position: relative;
+        }
+
+        .inside{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            position: absolute;
+            z-index: 10;
+        }
+
+        .deep{
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            position: relative;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="inside">
+            <div class="deep"></div>
+        </div>
+    </div>
+
+</body>
+</html>
