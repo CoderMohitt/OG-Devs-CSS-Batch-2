@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - NIT</title>
+    <style>
+        #main{
+            height: 500px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .common{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            margin: 10px;
+            /* display: inline-block; */
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            background-color: red;
+        }
+
+        span{
+            background-color: orange;
+        }
+
+        #one{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex box</h1>
+
+    <div id="main">
+        <div class="common">1</div>
+        <div class="common">2</div>
+        <div class="common">3</div>
+        <div class="common">4</div>
+    </div>
+
+    <h1>this is block level</h1>
+
+    <span>this is line level</span>
+
+    <div id="one">
+        text
+    </div>
+</body>
+</html>
