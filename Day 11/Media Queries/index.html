@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries - NIT</title>
+    <style>
+        .common{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            font-size: 30px;
+        }
+        
+        #main{
+            display: flex;
+            gap: 20px;
+        }
+
+        @media(max-width: 600px){
+            #main{
+                flex-direction: column;
+            }
+        }
+
+        @media(min-width: 800px){
+            .common{
+                height: 300px;
+                width: 300px;
+            }
+        }
+
+        @media(min-width: 300px) and (max-width: 400px){
+            .common{
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="common">this is content 1</div>
+        <div class="common">this is content 2</div>
+        <div class="common">this is content 3</div>
+        <div class="common">this is content 4</div>
+    </div>
+</body>
+</html>
