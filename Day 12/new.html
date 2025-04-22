@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions - NIT</title>
+    <style>
+        #main{
+            height: 300px;
+            width: 300px;
+            background-color: orange;
+            /* transition-property: margin-left;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 2s; */
+
+            transition: all 2s ease-in;
+            position: absolute;
+        }
+        
+        #main:hover{
+            margin-left: 500px;
+            margin-top: 500px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+</body>
+</html>

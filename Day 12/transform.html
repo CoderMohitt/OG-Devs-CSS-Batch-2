@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms - NIT</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .one{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #main:hover{
+            /* transform: rotate(360deg); */
+            /* transform: scale(0.5 */
+            /* transform: skew(-45deg); */
+            transform: translate(200px, -200px);
+        }
+        #main{
+            height: 250px;
+            width: 250px;
+            background-color: orange;
+            transition: all 1s linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div id="main">
+            <img width="250px" src="https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        </div>
+    </div>
+</body>
+</html>
