@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation - NIT</title>
+    <style>
+        #main{
+            height: 200px;
+            width: 400px;
+            background-color: rgb(17, 194, 17);
+            border-radius: 20px;
+            position: relative;
+
+            animation-name: moveRight;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            /* animation-delay: 2s; */
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes moveRight{
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+</body>
+</html>

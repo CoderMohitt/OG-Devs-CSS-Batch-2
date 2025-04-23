@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D transforms - NIT</title>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            gap: 10px;
+            /* flex-wrap: wrap; */
+            justify-content: space-around;
+        }
+        .common{
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+            transition: all 1s;
+        }
+
+        .forFlex{
+            display: flex;
+            gap: 10px;
+            justify-content: space-around;
+        }
+
+        #rotateX:hover{
+            transform: rotateX(45deg);
+        }
+
+        #rotateY:hover{
+            transform: rotateY(45deg);
+        }
+
+        #rotateZ:hover{
+            transform: rotateZ(45deg);
+        }
+        #translateX:hover{
+            transform: translateX(100px);
+        }
+
+        #translateY:hover{
+            transform: translateY(-100px);
+        }
+
+        #translateZ:hover{
+            transform: perspective(300px) translateZ(-100px) ;
+        }
+
+        #scaleX:hover{
+            transform: scaleX(2);
+        }
+
+        #scaleY:hover{
+            transform: scaleY(2);
+        }
+        #scaleZ:hover{
+            transform: perspective(300px) scaleZ(0.5) translateZ(100px);
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <div class="forFlex">
+        <div id="rotateX" class="common"></div>
+        <div id="rotateY" class="common"></div>
+        <div id="rotateZ" class="common"></div>
+    </div>
+    <div class="forFlex">
+        <div id="translateX" class="common"></div>
+        <div id="translateY" class="common"></div>
+        <div id="translateZ" class="common"></div>
+    </div>
+    <div class="forFlex">
+        <div id="scaleX" class="common"></div>
+        <div id="scaleY" class="common"></div>
+        <div id="scaleZ" class="common"></div>
+    </div>
+   </div> 
+</body>
+</html>
