@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - NIT</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            /* background-color: gray; */
+        }
+        #one, #two{
+            height: 150px;
+            width: 400px;
+            background-color: blue;
+            border-radius: 20px;
+        }
+
+        #one{
+            position: absolute;
+            animation : moveRight 5s linear infinite alternate;
+        }
+
+        #two{
+            animation : moveLeft 5s linear infinite alternate;
+        }
+
+        @keyframes moveRight{
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1100px;
+            }
+        }
+
+        @keyframes moveLeft{
+            from{
+                bottom: 0;
+                right: 0;
+            }
+            to{
+                bottom: 0;
+                right: 1100px;
+            }
+        }
+
+        #two{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        #ball{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            border-radius: 50%;
+            animation : ball 5s linear infinite alternate;
+        }
+
+        @keyframes ball{
+            0%{
+                top: 45%;
+                left: 50%;
+            }
+            25%{
+                top: 25%;
+                left: 80%;
+            }
+            50%{
+                top: 80%;
+                left: 70%;
+            }
+            75%{
+                top: 25%;
+                left: 10%;
+            }
+            100%{
+                top: 80%;
+                left: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="ball"></div>
+</body>
+</html>
